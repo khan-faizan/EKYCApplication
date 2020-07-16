@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    tools:context=".Getsignature">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo" />
+
+
+
+        <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+
+        android:textSize="23dp"
+        android:text="Get Signature" />
+
+    <LinearLayout
+        android:id="@+id/canvasll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/edittextround"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="4dp"
+        android:weightSum="2"
+        android:layout_below="@+id/canvasll"
+        android:background="@drawable/edittextround"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnclear"
+            android:background="@color/cardview_dark_background"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:textColor="#fff"
+            android:text="Clear"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnsave"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="Save"/>
+
+    </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gotouploaddoc"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="Next"/>
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

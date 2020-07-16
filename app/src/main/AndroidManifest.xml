@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swapnil.ekycapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/iconapp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/iconapp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NoInternet"></activity>
+        <activity android:name=".Getsignature" />
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Selectionactivity" />
+        <activity android:name=".Emiratesidverification" />
+        <activity android:name=".Capturefingerprint" />
+        <activity android:name=".Upload_Documents" />
+        <activity android:name=".Summary" />
+        <activity android:name=".Success" />
+        <activity android:name=".KYC_Form" />
+        <activity android:name=".KYC_form_confirmation" />
+        <activity android:name=".ExistingCustomerList" />
+    </application>
+
+</manifest>

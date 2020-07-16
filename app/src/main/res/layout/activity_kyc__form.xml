@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    tools:context="com.example.swapnil.ekycapplication.KYC_Form">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextsharp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/logo" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_height="3dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:weightSum="6"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/edittextsharp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/successicon" />
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/successicon" />
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/inprocess" />
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hollowsuccess" />
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hollowsuccess" />
+
+                    <ImageView
+
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/hollowsuccess" />
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/customertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittextround" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+
+                    <EditText
+                        android:id="@+id/c_firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="First Name" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/c_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/c_lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Last Name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Data of birth" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/num1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:hint="D"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/num2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:hint="D"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="-" />
+
+                    <EditText
+                        android:id="@+id/num3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:hint="M"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/num4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:hint="M"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-" />
+                    <EditText
+                        android:id="@+id/num5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:hint="Y"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+                    <EditText
+                        android:id="@+id/num6"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:hint="Y"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+                    <EditText
+                        android:id="@+id/num7"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:layout_weight="1"
+                        android:hint="Y"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+                    <EditText
+                        android:id="@+id/num8"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:maxLength="1"
+                        android:hint="Y"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cleartxt"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:background="@drawable/edittextround"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Clear" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittextround"
+                    android:hint="Nationality"
+                    android:layout_marginTop="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mobileno"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:maxLength="10"
+                        android:gravity="center"
+                        android:hint="Mobile Number"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextsharp"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/c_emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Email (Optional)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="EID Number (Available on backside of ID)" />
+
+                <EditText
+                    android:id="@+id/eidnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:maxLength="10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="EID Number"
+                    android:background="@drawable/edittextsharp"
+                    android:inputType="number" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/c_addressone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Address Line-1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/c_addresstwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Address Line-2" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/c_addressthree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Address Line-3" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Country" />
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittextround"
+                    android:text="United Arab Emirates"
+                    android:layout_marginTop="5dp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_margin="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="PEP" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittextround"
+                    android:gravity="center"
+                    android:layout_weight="2" >
+                    <RadioButton
+                        android:id="@+id/yespep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/nopep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No" />
+
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/c_profession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Profession" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/c_employername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="Employer Name" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/countryofbirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/edittextround"
+                    android:hint="Country"
+                    android:text="United Arab Emirates"
+                    android:layout_marginTop="10dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/c_expectedannualactivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="Expected Annual Activity(Volume)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:id="@+id/c_expectedannualactivityval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="Expected Annual Activity(Value)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/kycformprogress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_weight="1" />
+
+
+                <Button
+                    android:id="@+id/submitkyc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Submit" />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
